@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta name="x-apple-disable-message-reformatting">
+		<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+
+    <title>{{ title }}</title>
+    {% load staticfiles %}
+
+      <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+	 <link rel="stylesheet" href="{% static 'app/vendor/icofont/icofont.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/iboxicons/css/boxicons.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'app/vendor/animate.css/animate.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/remixicon/remixicon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/owl.carousel/assets/owl.carousel.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/venobox/venobox.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/aos/aos.css' %}"/>
+	  <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/style.css'%}"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+		<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+      <div class="container d-flex align-items-center">
+           <a href=""><img src="../static/images/lohh.jpg" width="200" height="105" style="margin-top:10px;"/> </a>
+         
+          <div class="cta">
+              <a href="about" class="scrollto"><strong>LOGIN</strong></a>
+              <ul style="display:inline-block;list-style: none;">
+                  <li><i class="icofont-envelope"></i> &nbsp;info@ablityfinance.com</li>
+                    <li><i class="icofont-phone"></i> &nbsp;+18000000</li>
+              </ul>              
+          </div>   
+      </div>
+  </div>
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top" >
+    <div class="container d-flex align-items-center">
+      <nav class="nav-menu d-none d-lg-block">
+          <ul>
+              <li class="active"><a href="about">About Us</a></li>
+              <li><a href="Our_Process">Our Process</a></li>
+              <li class="drop-down">
+                  <a href="">Solutions</a>
+                  <ul>
+                      <li><a href="lending_solutions">Lending Solutions</a></li>
+
+                      <li><a href="#">Calculator</a></li>
+
+                  </ul>
+              </li>
+              <li><a href="lender">Lender</a></li>
+              <li class="drop-down">
+                  <a href="">Media</a>
+                  <ul>
+                      <li><a href="blogs">Blogs</a></li>
+
+                      <li><a href="In the Media">In the Media</a></li>
+
+                  </ul>
+
+              </li>
+              <li><a href="Partnerships">Partnerships</a></li>
+              <li><a href="contact">Contact Us</a></li>
+          </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+    <div class="container">
+        <div class="row">
+             <div class="offset-lg-2 col-lg-9 col-sm-9 main-section mt-5">
+                  <h2 style="color:#fabd07; text-align:center;margin-top:50px; margin-bottom:50px; font-size:2.8em; font-weight:700;">Your Business Financing Application</h2>
+                 <form action="" method="post">
+                     <div class="row">
+                         <div class="col-md-12">
+                             <div class="form-group">
+                                    <label class="text-inverse" for="loantype">Loan Type <span style="color:red;">*</span></label>
+                                   <select class="custom-select d-block form-control" id="loantype" required>
+                                       <option value="">--Select Loan Type--</option>
+                                                         <option value="Working Capital">Working Capital</option>
+                                                        <option value="Bridge Loan">Bridge Loan</option>
+                                                        <option value="Accounts Receivable Financing">Accounts Receivable Financing</option>
+                                                        <option value="Purchase Order Financing">Purchase Order Financing</option>
+                                                        <option value="Equipment Financing">Equipment Financing</option>
+                                                        <option value="Commercial Real Estate Financing">Commercial Real Estate Financing</option>
+                                                        <option value="Land Development Financing">Land Development Financing</option>
+                                                        <option value="Construction Financing">Construction Financing</option>
+                                                        <option value="Mezzanine Financing (Mezz Debt)">Mezzanine Financing (Mezz Debt)</option>
+                                                        <option value="Debtor-In-Possession Financing (DIP)">Debtor-In-Possession Financing (DIP)</option>
+                                                        <option value="Tech Start-Up / Fintech Funding">Tech Start-Up / Fintech Funding </option>
+                                                        <option value="Securitization">Securitization</option>
+                                               
+                                    </select>
+                         
+                              </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label class="text-inverse" for="reqloanamt">Requested Loan Amount</label>
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                      <input type="number" min="0.00" step="0.01" value="1.00" id="reqloanamt" class="form-control">
+                                        </div>
+                                </div>
+                         </div>
+                     </div>
+                        
+                         <div class="row">
+                            <div class="col-md-12">
+                               <div class="form-group">
+                                <label class="text-inverse" for="useoffunds">Use of Funds</label>
+                               <select class="custom-select d-block form-control" id="useoffunds" required onchange="showfield(this.options[this.selectedIndex].value)" name="useoffunds">
+                                       <option value="">--Select Use of Funds--</option>
+                                                         <option value="Accounts Receivable Financing ">Accounts Receivable Financing </option>
+                                                        <option value="Acquisition Financing">Acquisition Financing</option>
+                                                        <option value="Debt Refinancing">Debt Refinancing</option>
+                                                       <option value="Equipment Purchase">Equipment Purchase</option>
+                                                        <option value="Financial Restructuring">Financial Restructuring</option>
+                                                        <option value="Financing Growth">Financing Growth</option>
+                                                        <option value="Funding a specific project for the Company">Funding a specific project for the Company</option>
+                                                        <option value="Hiring staff">Hiring staff</option>
+                                                        <option value="Mortgage Financing">Mortgage Financing</option>
+                                                        <option value="Producing Purchase Orders">Producing Purchase Orders</option>
+                                                        <option value="Property Purchase">Property Purchase</option>
+                                    <option value="Property Refinance">Property Refinance</option>
+                                    <option value="Purchasing Inventory">Purchasing Inventory</option>
+                                    <option value="Selling Assets">Selling Assets</option>
+                                   <option value="Short Term Funding">Short Term Funding</option>
+                                              <option value="Taxes">Taxes</option>   
+                                   <option value="Buy-Out Partner">Buy-Out Partner</option>   
+                                   <option value="Other">Other</option>   
+
+                                               
+                                    </select>
+                              <div id="div1"></div>
+                              </div>
+                            </div>
+                         </div>
+
+                         <a href="Company_info" class="btn btn-warning btn-lg" role="button" aria-disabled="true">Next</a>
+
+
+                 </form>
+
+
+             </div>
+
+        </div>
+ <script>
+
+     function showfield(name){
+	if(name=='Other')document.getElementById('div1').innerHTML = ' <br><label class="text-inverse" for="Other">Other:</label><input type="text" name="other" />';
+	else 
+		document.getElementById('div1').innerHTML='';
+}
+ </script>
+  
+</body>
+</html>

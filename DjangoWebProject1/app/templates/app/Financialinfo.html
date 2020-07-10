@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta name="x-apple-disable-message-reformatting">
+		<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+
+    <title>{{ title }}</title>
+    {% load staticfiles %}
+
+      <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+	 <link rel="stylesheet" href="{% static 'app/vendor/icofont/icofont.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/iboxicons/css/boxicons.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'app/vendor/animate.css/animate.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/remixicon/remixicon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/owl.carousel/assets/owl.carousel.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/venobox/venobox.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/aos/aos.css' %}"/>
+	  <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/style.css'%}"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	 <div class="container">
+        <div class="row">
+             <div class="offset-lg-2 col-lg-9 col-sm-9 main-section mt-5">
+                  <h2>Financial Information</h2>
+                 <form action="" method="post">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label class="text-inverse" for="gsr">Gross Sales Revenue <span style="color:red;">*</span></label>
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                      <input type="number" min="0.00" step="0.01" value="1.00" id="gsr" class="form-control">
+                                        </div>
+                                </div>
+                         </div>
+                     </div>
+
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <div class="form-group">
+                                  <label class="text-inverse" for="gi">Gross Income <span style="color:red;">*</span></label>
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                      <input type="number" min="0.00" step="0.01" value="1.00" id="gi" class="form-control">
+                                        </div>
+                                </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                          <div class="col-lg-12">
+                              <div class="form-group">
+                                  <label class="text-inverse" for="ni">Net Income <span style="color:red;">*</span></label>
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                      <input type="number" min="0.00" step="0.01" value="1.00" id="ni" class="form-control">
+                                        </div>
+                                </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-lg-12">
+                             <div class="form-group">
+                                    <label class="text-inverse" for="ct">Customer/Client Type <span style="color:red;">*</span></label>
+                                   <select class="custom-select d-block form-control" id="ct" required>
+                                        <option value="Auto Dealers">Auto Dealers</option>
+                                    <option value="Construction Developers">Construction Developers</option>
+                                    <option value="Distribution">Distributors</option>
+                                    <option value="Hospitality Services">Hospitality Services</option>
+                                    <option value="Importers/Exporters">Importers/Exporters</option>
+                                    <option value="Manufacturers">Manufacturers</option>
+                                    <option value="Online Sales">Online Sellers</option>
+                                    <option value="Professional Corporations">Professional Corporations</option>
+                                    <option value="Property Owners">Property Owners</option>
+                                    <option value="Real Estate Developers">Real Estate Developers</option>
+                                    <option value="Rental Property Owners">Rental Property Owners</option>
+                                    <option value="Restaurant Owners">Restaurant Owners</option>
+                                    <option value="Retailers">Retailers</option>
+                                    <option value="Tech Corportaions">Tech Corporations</option>
+                                    <option value="Other">Other</option>
+                                    </select>
+                         
+                              </div>
+                         </div>
+                     </div>
+
+
+                     <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label class="text-inverse" for="useoffunds">Requested Loan Amount</label>
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                      <input type="number" min="0.00" step="0.01" value="1.00" id="exampleInputAmount" class="form-control">
+                                        </div>
+                                </div>
+                         </div>
+                     </div>
+                        
+                         <div class="row">
+                            <div class="col-md-12">
+                               <div class="form-group">
+                                <label class="text-inverse" for="useoffunds">Use of Funds</label>
+                                <input type="text" class="form-control" id="useoffunds"  value="" required>
+                              </div>
+                            </div>
+                         </div>
+
+                         <a href="Company info" class="btn btn-warning btn-lg" role="button" aria-disabled="true">Next</a>
+
+
+                 </form>
+
+
+             </div>
+
+        </div>
+ 
+</body>
+</html>

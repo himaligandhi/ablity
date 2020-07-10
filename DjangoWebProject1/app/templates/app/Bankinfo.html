@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+   
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta name="x-apple-disable-message-reformatting">
+		<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+
+    <title>{{ title }}</title>
+    {% load staticfiles %}
+
+      <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+	 <link rel="stylesheet" href="{% static 'app/vendor/icofont/icofont.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/iboxicons/css/boxicons.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'app/vendor/animate.css/animate.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/remixicon/remixicon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/owl.carousel/assets/owl.carousel.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/venobox/venobox.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/aos/aos.css' %}"/>
+	  <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/style.css'%}"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+      <div class="row">
+             <div class="offset-lg-3 col-lg-8 col-sm-8 main-section mt-5">
+                <form class="container" id="needs-validation" novalidate>
+                 <h3 style="color:#fabd07;" class="mb-5">BANK INFORMATION</h3>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label class="text-inverse" for="bname">Bank Name <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="bname" value="" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="text-inverse" for="bankadd">Bank Address<span style="color:red;">*</span></label>
+                          <input type="text" class="form-control" id="bankadd"  value="" required>
+                        </div>
+                     </div>
+                </div>
+                    <div class="row">
+                         <div class="col-lg-4 col-sm-4 col-12">
+                                  <div class="form-group">
+                                    <label class="text-inverse" for="city">City<span style="color:red;">*</span></label>
+                                    <input type="text" class="form-control" id="city" value="" required>
+                                  </div>  
+                               </div> 
+
+                         <div class="col-lg-4 col-sm-4 col-12">
+                         <div class="form-group">
+                            <label class="text-inverse" for="province">Province  <span style="color:red;">*</span></label>
+                            <select class="custom-select d-block form-control" id="province" required>
+                                                 <option value="AB">Alberta</option>
+                                                <option value="BC">British Columbia</option>
+                                                <option value="MB">Manitoba</option>
+                                                <option value="NB">New Brunswick</option>
+                                                <option value="NL">Newfoundland and Labrador</option>
+                                                <option value="NS">Nova Scotia</option>
+                                                <option value="ON">Ontario</option>
+                                                <option value="PE">Prince Edward Island</option>
+                                                <option value="QC">Quebec</option>
+                                                <option value="SK">Saskatchewan</option>
+                                                <option value="NT">Northwest Territories</option>
+                                                <option value="NU">Nunavut</option>
+                                                <option value="YT">Yukon</option>
+                            </select>
+                         
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-4 col-12">
+                                  <div class="form-group">
+                                    <label class="text-inverse" for="psd">Postal Code<span style="color:red;">*</span></label>
+                                    <input type="text" class="form-control" id="psd" value="" required>
+                                  </div>  
+                               </div> 
+                    </div>
+
+                <div class="row">
+                     <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="text-inverse" for="accmanager">Account Manager<span style="color:red;">*</span></label>
+                          <input type="text" class="form-control" id="accmanager"  value="" required>
+                        </div>
+                     </div>
+                </div>
+                     <div class="row">
+                         <div class="col-lg-12">
+                            <div class="form-group">
+                              <label class="text-inverse" for="bankphonenumber">Bank Phone Number<span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" id="bankphonenumber"  value="" required>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-lg-12">
+                            <div class="form-group">
+                              <label class="text-inverse" for="accnumber">Account Number<span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" id="accnumber"  value="" required>
+                            </div>
+                         </div>
+                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            
+                            <div class="form-group">
+								Account Type *
+								<div class="wizard-form-radio">
+									<input name="radio_acc" id="radio1" type="radio" value="Chequing">
+									<label for="radio1">Chequing</label>
+								</div>
+								<div class="wizard-form-radio">
+									<input name="radio_acc" id="radio2" type="radio" value="Savings">
+									<label for="radio2">Savings</label>
+                                </div>
+                               
+							</div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <h1>Financial Info</h1>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                         <div class="col-lg-12">
+                            <div class="form-group">
+                              <label class="text-inverse" for="gsr">Gross Sales Revenue<span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" id="gsr"  value="" required>
+                            </div>
+                         </div>
+                     </div>
+                    <div class="row">
+                         <div class="col-lg-12">
+                            <div class="form-group">
+                              <label class="text-inverse" for="gi">Gross Income<span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" id="gi"  value="" required>
+                            </div>
+                         </div>
+                     </div>
+                    
+                    <div class="row">
+                         <div class="col-lg-12">
+                            <div class="form-group">
+                              <label class="text-inverse" for="ni">Net Income<span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" id="ni"  value="" required>
+                            </div>
+                         </div>
+                     </div>
+                      <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                            <label class="text-inverse" for="ct">Customer/Client Type <span style="color:red;">*</span></label>
+                                  <select name="ct" class="form-control wizard-required">
+                            <option value="Auto Dealers">Auto Dealers</option>
+                                    <option value="Construction Developers">Construction Developers</option>
+                                    <option value="Distribution">Distributors</option>
+                                    <option value="Hospitality Services">Hospitality Services</option>
+                                    <option value="Importers/Exporters">Importers/Exporters</option>
+                                    <option value="Manufacturers">Manufacturers</option>
+                                    <option value="Online Sales">Online Sellers</option>
+                                    <option value="Professional Corporations">Professional Corporations</option>
+                                    <option value="Property Owners">Property Owners</option>
+                                    <option value="Real Estate Developers">Real Estate Developers</option>
+                                    <option value="Rental Property Owners">Rental Property Owners</option>
+                                    <option value="Restaurant Owners">Restaurant Owners</option>
+                                    <option value="Retailers">Retailers</option>
+                                    <option value="Tech Corportaions">Tech Corporations</option>
+                                    <option value="Other">Other</option>
+                                </select> 
+                            </div>
+                          </div>
+                      </div>
+                        <div class="row">
+                         <div class="col-lg-6 col-sm-4 col-12">
+                            <div class="form-group">
+                              <label class="text-inverse" for="psr">Projected Sales Revenue<span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" id="psr"  value="" required>
+                            </div>
+                         </div>
+                            <div class="col-lg-6 col-sm-4 col-12">
+                            <div class="form-group">
+                              <label class="text-inverse" for="pgi">Projected Gross Income<span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" id="pgi"  value="" required>
+                            </div>
+                         </div>
+                        </div>
+                      <a href="BusinessOwner" class="btn btn-warning btn-lg" role="button" aria-disabled="true">Next</a>
+           </form>
+                  
+
+             </div>
+     </div>
+      </div>
+
+ 
+</body>
+</html>

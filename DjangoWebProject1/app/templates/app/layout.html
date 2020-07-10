@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+   
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta name="x-apple-disable-message-reformatting">
+		<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <title>{{ title }}</title>
+    {% load staticfiles %}
+
+      <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+	 <link rel="stylesheet" href="{% static 'app/vendor/icofont/icofont.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/iboxicons/css/boxicons.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'app/vendor/animate.css/animate.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/remixicon/remixicon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/owl.carousel/assets/owl.carousel.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/venobox/venobox.css' %}"/>
+	<link rel="stylesheet" href="{% static 'app/vendor/aos/aos.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+	{#<link rel="stylesheet" type="text/css" href="{% static 'app/content/style.css'%}"/>#}   
+  
+</head>
+
+<body>
+	
+
+
+   
+    <div class="container body-content">
+{% block content %}{% endblock %}
+        <hr/>
+        <footer id="footer">
+         <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Our Process</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Lending Solutions</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Lender</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Blogs</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">In the Media</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Calculator</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4></h4>
+            <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of Use</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Security</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Disclosures</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!--<div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>-->
+
+          <div class="col-lg-3 col-md-6 footer-info">
+              <h3>Follow Us</h3>
+              <div class="social-links mt-3">
+
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              <button type="button" class="btn btn-warning" style="margin-top:20px; margin-bottom:20px;">Download App Now</button>
+              <img src="app.png" width="150"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ABLity Finance Inc.</span></strong>. All Rights Reserved
+      </div>
+     
+    </div>
+        </footer>
+    </div>
+   
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>
